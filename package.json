@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "homepage": "https://SHAIKHALAM87.github.io/mern-integrate",
+  "homepage": "https://SHAIKHALAM87.github.io/mern-deploy",
   "scripts": {
     "start": "node server.js",
     "start-watch": "nodemon server.js",
@@ -17,6 +17,7 @@
     "body-parser": "^1.19.1",
     "dotenv": "^11.0.0",
     "express": "^4.17.2",
+    "gh-pages": "^3.2.3",
     "mongoose": "^6.1.6"
   },
   "devDependencies": {
