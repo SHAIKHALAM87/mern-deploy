@@ -4,6 +4,9 @@ import axios from 'axios';
 
 function Login(){
 
+  console.log(process.env);
+  axios.create({ baseURL: process.env.REACT_APP_API_URL });
+
     const [username,setusername] = useState({name:''});
     const handleSubmit = (e)=>{
       e.preventDefault();

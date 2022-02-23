@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const routes = require('./routes/api');
-require('dotenv').config();
+const DBVAL = require('dotenv').config();
 
 const app = express();
 
@@ -29,9 +29,11 @@ app.use('/api', routes);
 
 app.use((err, req, res, next) => {
   console.log(err);
+  console.log(DBVAL);
   next();
 });
 
 app.listen(port, () => {
+  console.log(DBVAL);
   console.log(`Server running on port ${port}`);
 });
